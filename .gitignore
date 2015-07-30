@@ -2,6 +2,7 @@ Thumbs.db
 /static/assets/css/*
 !/static/assets/css/font-awesome*
 !/static/assets/css/bootstrap*
+!/static/assets/css/open-sans*
 /.buildpath
 /build/
 */archive/

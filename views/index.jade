@@ -5,6 +5,7 @@ block title
 block append stylesheet
   link(rel='stylesheet', href='assets/css/distro.css')
   link(rel='stylesheet', href='assets/css/news-flow.css')
+  script(src='assets/js/index.js')
 
 mixin systemRequirement(faicon, text)
   p
@@ -44,7 +45,7 @@ block content
             | chocolate for the day!
     .row(style="margin: 2rem 0")
       .col-md-6.col-md-offset-1.col-xs-12
-        .alert.alert-info
+        #index-alert-info.alert.alert-info
           p <strong>What are my choices and which one to chooser from?</strong>
           p 
             | AOSC OS is available in (many) different flavors, ranging from various architectural
@@ -53,14 +54,15 @@ block content
             li Tarball releases, for regular installation.
             li Docker releases, for fast deployment.
             li BuildKit releases, for developers.
-      .col-md-4.col-xs-12
+      .col-md-4.col-xs-12.inside-full-height
         ul.list-group
           each ad in params.distro.featured
-            a(href="#{ad.url}" style="padding: 15px;").list-group-item
-                span.fa.fa-2x.fa-download
-                  |   Featured
-                p(style="padding-left: 36px") AOSC OS with #{ad.desktop}
-                ul.afe-literal-list(style="padding-left: 36px")
+            a#index-download-button(href="#{ad.url}" style="display: block; padding: 15px;").list-group-item
+                i.fa.fa-2x.fa-download.pull-right
+                h3(style="margin-top: 0")
+                  |   Download
+                p(style="padding-left: 0px") AOSC OS with #{ad.desktop}
+                ul.afe-literal-list(style="padding-left: 0px")
                   each foo in ad.reason
                     li=foo
     .row
@@ -110,8 +112,8 @@ block content
             .col-md-5.col-xs-12(style="padding-top: 20px")
               .alert.alert-warning.alert-dismissible
                 <strong>RPM builds are experimental!</strong>
-                button(type="button" data-dismiss="alert" aria-label="Close").close
-                  span(aria-hidden="true") &times
+                //- button(type="button" data-dismiss="alert" aria-label="Close").close
+                //-   span(aria-hidden="true") &times
               h4 Will it run on mine...
               p Please refer to the system requirement listed below.
               ul.afe-literal-list
