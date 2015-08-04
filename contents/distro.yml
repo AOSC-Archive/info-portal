@@ -36,8 +36,8 @@ spins:
     rpmcore: 2.98.1
     screenshot: /assets/i/kde-scr.jpg
     logo: /assets/i/kde.svg
-    dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/kde/aosc-os_kde_cyanflame_dpkg_20150709_en-US.tar.xz
-    rpmurl: '#'
+    dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/kde/aosc-os_kde_20150801_dpkg_amd64.tar.xz
+    rpmurl: http://mirrors.anthonos.org/anthon/aosc-os/kde/aosc-os_kde_20150801_rpm_amd64.tar.xz
     checksum: 273c68113672b2ac760da597daeaf82b
     processor: Intel Core 2 Duo or faster
     ram: 2.0 GiB of RAM
