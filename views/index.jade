@@ -86,15 +86,17 @@ block content
               ul.list-group
                 each desu in params.distro.spins
                   a(href="#{desu.dpkgurl}").list-group-item
-                    <strong>#{desu.desktop}</strong> 
-                    span.afe-littlecaption(style="font-weight: normal") (Core #{desu.dpkgcore})
+                    strong.list-group-item-indentificator
+                      | #{desu.desktop}
+                    span.afe-littlecaption() Core #{desu.dpkgcore}
                     span(style="vertical-align: middle;").pull-right.fa.fa-download
               #rpm: h4 Tarball releases (RPM)
               ul.list-group
                 each desu in params.distro.spins
                   a(href="#{desu.rpmurl}").list-group-item
-                    <strong>#{desu.desktop}</strong> 
-                    span.afe-littlecaption(style="font-weight: normal") (Core #{desu.rpmcore})
+                    strong.list-group-item-indentificator
+                      | #{desu.desktop}
+                    span.afe-littlecaption() Core #{desu.rpmcore}
                     span(style="vertical-align: middle;").pull-right.fa.fa-download
               #docker: h4 Docker images
               ul.list-group
