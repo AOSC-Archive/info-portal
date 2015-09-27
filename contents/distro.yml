@@ -122,6 +122,9 @@ spins:
       having a major demand in customization and reliability.
 buildkit:
   -
+    datetag: 20150915
+    url: http://repo.anthonos.org/aosc-os/buildkit/aosc-os-buildkit_20150915.tar.xz
+  -
     datetag: 20150815
     url: http://repo.anthonos.org/aosc-os/buildkit/aosc-os-buildkit_20150815.tar.xz
   -
