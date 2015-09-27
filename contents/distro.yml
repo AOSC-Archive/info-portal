@@ -135,12 +135,12 @@ buildkit:
     url: http://download.anthonos.org/anthon/os3-releases/01_Beta-2/02_BuildKit/aosc-os-buildkit_dpkg_20150423.tar.xz
 featured:
   -
-    desktop: KDE
+    desktop: GNOME
     reason:
       - >
         Featured version.
       - >
-        New Plasma 5 desktop.
+        GNOME 3.18.
       - >
-        Applications with a new Breeze look.
-    url: http://mirrors.anthonos.org/anthon/aosc-os/kde/aosc-os_kde_20150801_dpkg_amd64.tar.xz
+        Brand new refresh to your GNOME experience.
+    url: http://mirrors.anthonos.org/anthon/aosc-os/gnome/aosc-os_gnome_cyanflame_dpkg_20150926.tar.xz
