@@ -31,6 +31,12 @@ features:
       box, to your pleasure.
 spins:
   -
+    desktop: Base
+    dpkgcore: 3.2.1
+    rpmcore: 3.2.1
+    dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/base/aosc-os_base_20151230_dpkg.tar.xz
+    rpmurl: http://mirrors.anthonos.org/anthon/aosc-os/base/aosc-os_base_20151230_rpm.tar.xz
+  -
     desktop: KDE
     dpkgcore: 3.2.1
     rpmcore: 3.2.1
@@ -38,7 +44,6 @@ spins:
     logo: /assets/i/kde.svg
     dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/kde/aosc-os_kde_20151228_dpkg_amd64.tar.xz
     rpmurl: http://mirrors.anthonos.org/anthon/aosc-os/kde/aosc-os_kde_20151228_rpm_amd64.tar.xz
-    checksum: 273c68113672b2ac760da597daeaf82b
     processor: Intel Core 2 Duo or faster
     ram: 2.0 GiB of RAM
     hdd: 8.0 GiB of HDD space
@@ -50,13 +55,12 @@ spins:
       while demanding assurance on security, and stability.
   -
     desktop: GNOME
-    dpkgcore: 3.0.4
-    rpmcore: 2.98.1
+    dpkgcore: 3.2.1
+    rpmcore: 3.2.1
     screenshot: /assets/i/gnome-scr.jpg
     logo: /assets/i/gnome.svg
-    dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/gnome/aosc-os_gnome_cyanflame_dpkg_20150926.tar.xz
-    rpmurl: http://download.anthonos.org/anthon/os3-releases/01_Beta-2/01_Tarballs/aosc-os3_gnome-beta2_obsidian_rpm_20150606_en-US.tar.xz
-    checksum: b5c092db806a4b02c712128833429671
+    dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/gnome/aosc-os_gnome_20151230_dpkg.tar.xz
+    rpmurl: http://mirrors.anthonos.org/anthon/aosc-os/gnome/aosc-os_gnome_20151230_rpm.tar.xz
     processor: Intel Core 2 Duo or faster
     ram: 2.0 GiB of RAM
     hdd: 8.0 GiB of HDD space
@@ -73,8 +77,7 @@ spins:
     logo: /assets/i/xfce.svg
     screenshot: /assets/i/xfce-scr.jpg
     dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/xfce/aosc-os_xfce_cyanflame_dpkg_20151109_en-US.tar.xz
-    rpmurl: http://download.anthonos.org/anthon/os3-releases/01_Beta-2/01_Tarballs/aosc-os3_xfce-beta2_obsidian_rpm_20150604_en-US.tar.xz
-    checksum: 88f50dfc6b24c2f06a6855bee98f53d8
+    rpmurl: http://mirrors.anthonos.org/anthon/os3-releases/01_Beta-2/01_Tarballs/aosc-os3_xfce-beta2_obsidian_rpm_20150604_en-US.tar.xz
     processor: Intel Pentium 4 HT "Prescott" or faster
     ram: 0.5 GiB of RAM
     hdd: 5.0 GiB of HDD space
@@ -91,8 +94,7 @@ spins:
     logo: /assets/i/cinnamon.svg
     screenshot: /assets/i/cinnamon-scr.jpg
     dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/cinnamon/aosc-os_cinnamon_cyanflame_dpkg_20150708_en-US.tar.xz
-    rpmurl: http://download.anthonos.org/anthon/os3-releases/01_Beta-2/01_Tarballs/aosc-os3_cinnamon-beta2_obsidian_rpm_20150604_en-US.tar.xz
-    checksum: bcfbc975691f67f69adcc6db02e0e225
+    rpmurl: http://mirrors.anthonos.org/anthon/os3-releases/01_Beta-2/01_Tarballs/aosc-os3_cinnamon-beta2_obsidian_rpm_20150604_en-US.tar.xz
     processor: Intel Core 2 Duo or faster
     ram: 2.0 GiB of RAM
     hdd: 8.0 GiB of HDD space
@@ -107,9 +109,8 @@ spins:
     dpkgcore: 3.0.3
     rpmcore: 2.98.1
     logo: /assets/i/mate.svg
-    screenshot: /assets/i/mate-scr.jpg
     dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/mate/aosc-os_mate_cyanflame_dpkg_20150825_en-US.tar.xz
-    rpmurl: http://download.anthonos.org/anthon/os3-releases/01_Beta-2/01_Tarballs/aosc-os3_mate-beta2_obsidian_rpm_20150607_en-US.tar.xz
+    rpmurl: http://mirrors.anthonos.org/anthon/os3-releases/01_Beta-2/01_Tarballs/aosc-os3_mate-beta2_obsidian_rpm_20150607_en-US.tar.xz
     checksum: 9a34b44f925bc600faff4d2ceab0c71e
     processor: Intel Pentium 4 HT "Prescott" or faster
     ram: 0.5 GiB of RAM
@@ -122,34 +123,37 @@ spins:
       having a major demand in customization and reliability.
 buildkit:
   -
+    datetag: 20151230
+    url: http://mirrors.anthonos.org/anthon/aosc-os/buildkit/aosc-os-buildkit_20151230.tar.xz
+  -
     datetag: 20151205
-    url: http://repo.anthonos.org/aosc-os/buildkit/aosc-os-buildkit_20151205.tar.xz
+    url: http://mirrors.anthonos.org/anthon/aosc-os/buildkit/aosc-os-buildkit_20151205.tar.xz
   -
     datetag: 20151115
-    url: http://repo.anthonos.org/aosc-os/buildkit/aosc-os-buildkit_20151115.tar.xz
+    url: http://mirrors.anthonos.org/anthon/aosc-os/buildkit/aosc-os-buildkit_20151115.tar.xz
   -
     datetag: 20150915
-    url: http://repo.anthonos.org/aosc-os/buildkit/aosc-os-buildkit_20150915.tar.xz
+    url: http://mirrors.anthonos.org/anthon/aosc-os/buildkit/aosc-os-buildkit_20150915.tar.xz
   -
     datetag: 20150815
-    url: http://repo.anthonos.org/aosc-os/buildkit/aosc-os-buildkit_20150815.tar.xz
+    url: http://mirrors.anthonos.org/anthon/aosc-os/buildkit/aosc-os-buildkit_20150815.tar.xz
   -
     datetag: 20150730
-    url: http://repo.anthonos.org/aosc-os/buildkit/aosc-os-buildkit_20150730.tar.xz
+    url: http://mirrors.anthonos.org/anthon/aosc-os/buildkit/aosc-os-buildkit_20150730.tar.xz
   -
     datetag: 20150611
-    url: http://download.anthonos.org/anthon/os3-releases/01_Beta-2/02_BuildKit/aosc-os-buildkit_dpkg_20150611.tar.xz
+    url: http://mirrors.anthonos.org/anthon/os3-releases/01_Beta-2/02_BuildKit/aosc-os-buildkit_dpkg_20150611.tar.xz
   -
     datetag: 20150423
-    url: http://download.anthonos.org/anthon/os3-releases/01_Beta-2/02_BuildKit/aosc-os-buildkit_dpkg_20150423.tar.xz
+    url: http://mirrors.anthonos.org/anthon/os3-releases/01_Beta-2/02_BuildKit/aosc-os-buildkit_dpkg_20150423.tar.xz
 featured:
   -
-    desktop: KDE
+    desktop: No Desktop!
     reason:
       - >
         Featured version.
       - >
-        Brand new Plasma 5.5.
+        Bare metal AOSC OS.
       - >
-        Fully up-to-date system technologies.
-    url: http://mirrors.anthonos.org/anthon/aosc-os/kde/aosc-os_kde_20151211_dpkg_amd64.tar.xz
+        Open up your imagination!
+    url: http://mirrors.anthonos.org/anthon/aosc-os/base/aosc-os_base_20151230_dpkg.tar.xz
