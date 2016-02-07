@@ -55,11 +55,11 @@ spins:
       while demanding assurance on security, and stability.
   -
     desktop: GNOME
-    dpkgcore: 3.2.1
+    dpkgcore: 3.4.0
     rpmcore: 3.2.1
     screenshot: /assets/i/gnome-scr.jpg
     logo: /assets/i/gnome.svg
-    dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/gnome/aosc-os_gnome_20151230_dpkg.tar.xz
+    dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/gnome/aosc-os_gnome_20160207_dpkg.tar.xz
     rpmurl: http://mirrors.anthonos.org/anthon/aosc-os/gnome/aosc-os_gnome_20151230_rpm.tar.xz
     processor: Intel Core 2 Duo or faster
     ram: 2.0 GiB of RAM
