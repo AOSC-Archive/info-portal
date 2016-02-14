@@ -32,17 +32,17 @@ features:
 spins:
   -
     desktop: Base
-    dpkgcore: 3.2.1
+    dpkgcore: 3.4.1
     rpmcore: 3.2.1
-    dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/base/aosc-os_base_20151230_dpkg.tar.xz
+    dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/base/aosc-os_base_20160212_dpkg.tar.xz
     rpmurl: http://mirrors.anthonos.org/anthon/aosc-os/base/aosc-os_base_20151230_rpm.tar.xz
   -
     desktop: KDE
-    dpkgcore: 3.2.1
+    dpkgcore: 3.4.1
     rpmcore: 3.2.1
     screenshot: /assets/i/kde-scr.jpg
     logo: /assets/i/kde.svg
-    dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/kde/aosc-os_kde_20151228_dpkg_amd64.tar.xz
+    dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/kde/aosc-os_kde_20160212_dpkg_amd64.tar.xz
     rpmurl: http://mirrors.anthonos.org/anthon/aosc-os/kde/aosc-os_kde_20151228_rpm_amd64.tar.xz
     processor: Intel Core 2 Duo or faster
     ram: 2.0 GiB of RAM
