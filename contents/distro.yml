@@ -88,23 +88,6 @@ spins:
       XFCE is just plain and old, it provides users with loads of options in
       customization.
   -
-    desktop: Cinnamon
-    dpkgcore: 3.0.1
-    rpmcore: 2.98.1
-    logo: /assets/i/cinnamon.svg
-    screenshot: /assets/i/cinnamon-scr.jpg
-    dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/cinnamon/aosc-os_cinnamon_cyanflame_dpkg_20150708_en-US.tar.xz
-    rpmurl: http://mirrors.anthonos.org/anthon/os3-releases/01_Beta-2/01_Tarballs/aosc-os3_cinnamon-beta2_obsidian_rpm_20150604_en-US.tar.xz
-    processor: Intel Core 2 Duo or faster
-    ram: 2.0 GiB of RAM
-    hdd: 8.0 GiB of HDD space
-    machine: ThinkPad X61 or equivalent
-    description: >
-      Cinnamon originated from the Linux Mint community as a fork of
-      GNOME 3 desktop interface - GNOME Shell. Cinnamon provides a
-      more conventional desktop interface, while offering the ease-of-use
-      that GNOME is loved for.
-  -
     desktop: MATE
     dpkgcore: 3.0.3
     rpmcore: 2.98.1
