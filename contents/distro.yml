@@ -32,17 +32,17 @@ features:
 spins:
   -
     desktop: Base
-    dpkgcore: 3.4.1
+    dpkgcore: 3.4.2
     rpmcore: 3.2.1
-    dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/base/aosc-os_base_20160212_dpkg.tar.xz
+    dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/base/aosc-os_base_20160220_dpkg.tar.xz
     rpmurl: http://mirrors.anthonos.org/anthon/aosc-os/base/aosc-os_base_20151230_rpm.tar.xz
   -
     desktop: KDE
-    dpkgcore: 3.4.1
+    dpkgcore: 3.4.2
     rpmcore: 3.2.1
     screenshot: /assets/i/kde-scr.jpg
     logo: /assets/i/kde.svg
-    dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/kde/aosc-os_kde_20160212_dpkg_amd64.tar.xz
+    dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/kde/aosc-os_kde_20160220_dpkg.tar.xz
     rpmurl: http://mirrors.anthonos.org/anthon/aosc-os/kde/aosc-os_kde_20151228_rpm_amd64.tar.xz
     processor: Intel Core 2 Duo or faster
     ram: 2.0 GiB of RAM
@@ -55,11 +55,11 @@ spins:
       while demanding assurance on security, and stability.
   -
     desktop: GNOME
-    dpkgcore: 3.4.0
+    dpkgcore: 3.4.2
     rpmcore: 3.2.1
     screenshot: /assets/i/gnome-scr.jpg
     logo: /assets/i/gnome.svg
-    dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/gnome/aosc-os_gnome_20160207_dpkg.tar.xz
+    dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/gnome/aosc-os_gnome_20160220_dpkg.tar.xz
     rpmurl: http://mirrors.anthonos.org/anthon/aosc-os/gnome/aosc-os_gnome_20151230_rpm.tar.xz
     processor: Intel Core 2 Duo or faster
     ram: 2.0 GiB of RAM
@@ -72,11 +72,11 @@ spins:
       arguably the simpliest to configure.
   -
     desktop: XFCE
-    dpkgcore: 3.4.1
+    dpkgcore: 3.4.2
     rpmcore: 2.98.1
     logo: /assets/i/xfce.svg
     screenshot: /assets/i/xfce-scr.jpg
-    dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/xfce/aosc-os_xfce_20160216_dpkg.tar.xz
+    dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/xfce/aosc-os_xfce_20160220_dpkg.tar.xz
     rpmurl: http://mirrors.anthonos.org/anthon/os3-releases/01_Beta-2/01_Tarballs/aosc-os3_xfce-beta2_obsidian_rpm_20150604_en-US.tar.xz
     processor: Intel Pentium 4 HT "Prescott" or faster
     ram: 0.5 GiB of RAM
@@ -89,10 +89,10 @@ spins:
       customization.
   -
     desktop: MATE
-    dpkgcore: 3.0.3
+    dpkgcore: 3.4.2
     rpmcore: 2.98.1
     logo: /assets/i/mate.svg
-    dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/mate/aosc-os_mate_cyanflame_dpkg_20150825_en-US.tar.xz
+    dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/mate/aosc-os_mate_20160220_dpkg.tar.xz
     rpmurl: http://mirrors.anthonos.org/anthon/os3-releases/01_Beta-2/01_Tarballs/aosc-os3_mate-beta2_obsidian_rpm_20150607_en-US.tar.xz
     checksum: 9a34b44f925bc600faff4d2ceab0c71e
     processor: Intel Pentium 4 HT "Prescott" or faster
