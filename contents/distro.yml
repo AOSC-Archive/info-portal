@@ -132,6 +132,13 @@ buildkit:
   -
     datetag: 20150423
     url: http://mirrors.anthonos.org/anthon/os3-releases/01_Beta-2/02_BuildKit/aosc-os-buildkit_dpkg_20150423.tar.xz
+docker:
+  -
+    variant: Base
+    command: docker pull aosc-os/aosc-os
+  -
+    variant: BuildKit
+    command: docker pull aosc-os/aosc-os-buildkit
 featured:
   -
     desktop: No Desktop!

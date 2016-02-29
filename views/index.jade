@@ -101,10 +101,11 @@ block content
                     span(style="vertical-align: middle;").pull-right.fa.fa-download
               #docker: h4 Docker images
               ul.list-group
-                a(href="#").list-group-item
-                  span
-                    | <strong>ALMOST THERE</strong>
-                    span(style="vertical-align: middle;").pull-right.fa.fa-spin.fa-refresh
+                each desu in params.distro.docker
+                  .list-group-item
+                    strong.list-group-item-indentificator
+                      | #{desu.variant}
+                    span.afe-littlecaption() #{desu.command}
               #buildkit: h4 BuildKit
               ul.list-group
                 each bk in params.distro.buildkit
