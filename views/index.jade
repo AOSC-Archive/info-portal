@@ -106,6 +106,9 @@ block content
                     strong.list-group-item-indentificator
                       | #{desu.variant}
                     span.afe-littlecaption() #{desu.command}
+                a(href="https://hub.docker.com/r/aosc/").list-group-item
+                  strong.list-group-item-indentificator
+                    | DockerHub Page
               #buildkit: h4 BuildKit
               ul.list-group
                 each bk in params.distro.buildkit

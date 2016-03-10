@@ -135,10 +135,10 @@ buildkit:
 docker:
   -
     variant: Base
-    command: docker pull aosc-os/aosc-os
+    command: docker pull aosc/aosc-os
   -
     variant: BuildKit
-    command: docker pull aosc-os/aosc-os-buildkit
+    command: docker pull aosc/aosc-os-buildkit
 featured:
   -
     desktop: No Desktop!
