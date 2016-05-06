@@ -70,8 +70,8 @@ block content
       .col-md-10.col-md-offset-1.col-xs-12
         ul(role="tablist").nav.nav-tabs.nav-justified
           li(role="presentation" class="active"): a(href="#amd64" data-toggle="tab") x86_64 (AMD64)
-          li(role="presentation"): a(href="#armv7" data-toggle="tab") ARMv7 (hard-float)
-          li(role="presentation"): a(href="#mips3" data-toggle="tab") MIPS-III (n32)
+          li(role="presentation"): a(href="#armv7" data-toggle="tab") ARM
+          li(role="presentation"): a(href="#mips3" data-toggle="tab") MIPS
     .row
       .col-md-10.col-md-offset-1.col-xs-12
         div(class="tab-content")
@@ -131,7 +131,7 @@ block content
               p For running KDE you may want more RAM.
               hr
               h4 How to install...
-              p Please refer to the
+              p Please refer to the 
                 a(href="https://github.com/AOSC-Dev/aosc-os/blob/master/how-to-install.md") installation guide.
               hr
               h4 Core version...
@@ -144,30 +144,48 @@ block content
                 |  repository.
           div(role="tabpanel" class="tab-pane" id="armv7")
             .col-md-7.col-xs-12
-              h3 ARMv7 (hard-float) releases
+              h3 ARM releases
               p
-                | ARMv7 (hard-float) is an experimental port of AOSC OS, currently under
-                | heavy development. ARMv7 will be available for a variety of devices, like
-                | phones (cellular calls not in plan), tablets, and development boards.
+                | ARM is an experimental port of AOSC OS, under heavyd development.
+                | The ARM port will be available for a variety of devices with ARMv7 or
+                | ARMv8 (64-bit) processors, like cell phones (cellular support not 
+                | in plan), tablets, and development boards.
               hr
-              #dpkg: h4 All releases
+              #dpkg: h4 ARMv7, Hard Float
               ul.list-group
-                a(href="#").list-group-item
-                  span
-                    | <strong>COMING SOON</strong>
-                    span(style="vertical-align: middle;").pull-right.fa.fa-spin.fa-refresh
+                each arm7 in params.distro.armv7
+                  a(href="#{arm7.dpkgurl}").list-group-item
+                    strong.list-group-item-indentificator
+                      | #{arm7.device}
+                    span.afe-littlecaption() Core #{arm7.dpkgcore}
+                    span(style="vertical-align: middle;").pull-right.fa.fa-download
+              #dpkg: h4 ARMv8, AArch64 (Experimental)
+              ul.list-group
+                each arm8 in params.distro.armv8
+                  a(href="#{arm8.dpkgurl}").list-group-item
+                    strong.list-group-item-indentificator
+                      | #{arm8.device}
+                    span.afe-littlecaption() Core #{arm8.dpkgcore}
+                    span(style="vertical-align: middle;").pull-right.fa.fa-download
+              #buildkit: h4 BuildKit
+              ul.list-group
+                each armbk in params.distro.armbuildkit
+                  a(href="#{armbk.url}").list-group-item
+                    span
+                      | <strong>#{armbk.datetag}</strong>
+                    span(style="vertical-align: middle;").pull-right.fa.fa-download
             .col-md-5.col-xs-12(style="padding-top: 20px;")
               h4 Will it run on mine...
               p Please refer to the system requirement listed below.
               ul.afe-literal-list
-                li CPU: ARMv7, with Neon FPU support
+                li CPU: ARMv7/8 processors with hardware FPU
                 li RAM: 0.2 GiB, the more the better
                 li HDD: 2 GiB of storage space
                 li NET: Internet connection advised
               p Requirement varies between different versions.
               hr
               h4 How to install...
-              p Please refer to the
+              p Please refer to the 
                 a(href="https://github.com/AOSC-Dev/aosc-os/blob/master/how-to-install.md") installation guide.
               hr
               h4 Core version...
@@ -180,11 +198,12 @@ block content
                 |  repository.
           div(role="tabpanel" class="tab-pane" id="mips3")
             .col-md-7.col-xs-12
-              h3 MIPS-III (n32) releases
+              h3 MIPS releases
               p
-                | MIPS-III (n32) is an experimental port of AOSC OS to specifically
-                | MIPS-III, or Loongson 2 series-based computers such as the
-                | "Yeeloong 8089" netbook. This port is currently under heavy development.
+                | MIPS is an experimental port of AOSC OS to specifically to MIPS-II
+                | (32-bit) and MIPS64 (64-bit) processors. Currently, due to limitations
+                | in available testing devices, this port is specialized for the
+                | Lemote Yeeloong 8089D netbook with Loongson 2F processor.
               hr
               #dpkg: h4 All releases
               ul.list-group
@@ -196,13 +215,13 @@ block content
               h4 Will it run on mine...
               p Please refer to the system requirement listed below.
               ul.afe-literal-list
-                li CPU: MIPS-III compatible
+                li CPU: MIPS-II compatible
                 li RAM: 1 GiB, the more the better
                 li HDD: 4 GiB of HDD space
                 li NET: Internet connection advised
               hr
               h4 How to install...
-              p Please refer to the
+              p Please refer to the 
                 a(href="https://github.com/AOSC-Dev/aosc-os/blob/master/how-to-install.md") installation guide.
               hr
               h4 Core version...
