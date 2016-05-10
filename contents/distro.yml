@@ -1,17 +1,21 @@
 armv7:
   -
+    device: Generic
+    dpkgcore: 3.6.0
+    dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/os-armel/generic/aosc-os_base_20160510_dpkg.tar.xz
+  -
     device: Raspberry Pi 2
     dpkgcore: 3.6.0
-    dpkgurl: http://mirror.anthonos.org/aosc-os/os-armel/rpi2/aosc-os_base_rpi2_20160202.1_dpkg.tar.xz
+    dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/os-armel/rpi2/aosc-os_base_rpi2_20160202.1_dpkg.tar.xz
 armv8:
   -
     device: Emulators
     dpkgcore: 3.5.1
-    dpkgurl: https://mirror.anthonos.org/aosc-os/os-arm64/test_vm/aosc-arm64-bootable-p1.tar
+    dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/os-arm64/test_vm/aosc-arm64-bootable-p1.tar
 armbuildkit:
   -
     datetag: 20160202 (ARMv7)
-    url: https://mirror.anthonos.org/aosc-os/os-armel/buildkit/aosc-os-buildkit_armel_20160202.tar.xz
+    url: http://mirrors.anthonos.org/anthon/aosc-os/os-armel/buildkit/aosc-os-buildkit_armel_20160202.tar.xz
 spins:
   -
     desktop: Base
