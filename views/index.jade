@@ -26,10 +26,10 @@ block content
             | portal. This is a temporary information portal, here you can find basic info
             | with downloading AOSC OS, and important news or information.
           ul.afe-literal-list
-            li You can view the new work-in-progress page 
+            li You can view the new work-in-progress page
               a(href="https://w-qc.anthonos.org") here.
-            li You can help us with the development by joining 
-              a(href="https://webchat.freenode.net/?channels=aosc") #aosc 
+            li You can help us with the development by joining
+              a(href="https://webchat.freenode.net/?channels=aosc") #aosc
               | on freenode.
     .row
       .col-md-10.col-md-offset-1.col-xs-12
@@ -131,7 +131,7 @@ block content
               p For running KDE you may want more RAM.
               hr
               h4 How to install...
-              p Please refer to the 
+              p Please refer to the
                 a(href="https://github.com/AOSC-Dev/aosc-os/blob/master/how-to-install.md") installation guide.
               hr
               h4 Core version...
@@ -139,7 +139,7 @@ block content
                 | The "Core version" listed to the left are meant to tell from between
                 | versions of AOSC OS rather than just using date tags.
               p
-                | For a complete rationale of "Core version", please refer to the 
+                | For a complete rationale of "Core version", please refer to the
                 a(href="https://github.com/AOSC-Dev/aosc-os-core/blob/master/README.md") Core
                 |  repository.
           div(role="tabpanel" class="tab-pane" id="armv7")
@@ -148,7 +148,7 @@ block content
               p
                 | ARM is an experimental port of AOSC OS, under heavyd development.
                 | The ARM port will be available for a variety of devices with ARMv7 or
-                | ARMv8 (64-bit) processors, like cell phones (cellular support not 
+                | ARMv8 (64-bit) processors, like cell phones (cellular support not
                 | in plan), tablets, and development boards.
               hr
               #dpkg: h4 ARMv7, Hard Float
@@ -185,7 +185,7 @@ block content
               p Requirement varies between different versions.
               hr
               h4 How to install...
-              p Please refer to the 
+              p Please refer to the
                 a(href="https://github.com/AOSC-Dev/aosc-os/blob/master/how-to-install.md") installation guide.
               hr
               h4 Core version...
@@ -193,7 +193,7 @@ block content
                 | The "Core version" listed to the left are meant to tell from between
                 | versions of AOSC OS rather than just using date tags.
               p
-                | For a complete rationale of "Core version", please refer to the 
+                | For a complete rationale of "Core version", please refer to the
                 a(href="https://github.com/AOSC-Dev/aosc-os-core/blob/master/README.md") Core
                 |  repository.
           div(role="tabpanel" class="tab-pane" id="mips3")
@@ -205,12 +205,21 @@ block content
                 | in available testing devices, this port is specialized for the
                 | Lemote Yeeloong 8089D netbook with Loongson 2F processor.
               hr
-              #dpkg: h4 All releases
+              #dpkg: h4 MIPS (Endian Little)
               ul.list-group
-                a(href="#").list-group-item
-                  span
-                    | <strong>COMING SOON</strong>
-                    span(style="vertical-align: middle;").pull-right.fa.fa-spin.fa-refresh
+                each mips in params.distro.mipsel
+                  a(href="#{mips.dpkgurl}").list-group-item
+                    strong.list-group-item-indentificator
+                      | #{mips.desktop}
+                    span.afe-littlecaption() Core #{mips.dpkgcore}
+                    span(style="vertical-align: middle;").pull-right.fa.fa-download
+              #buildkit: h4 BuildKit
+              ul.list-group
+                each mipsbk in params.distro.mipselbuildkit
+                  a(href="#{mipsbk.url}").list-group-item
+                    span
+                      | <strong>#{mipsbk.datetag}</strong>
+                    span(style="vertical-align: middle;").pull-right.fa.fa-download
             .col-md-5.col-xs-12(style="padding-top: 20px")
               h4 Will it run on mine...
               p Please refer to the system requirement listed below.
@@ -221,7 +230,7 @@ block content
                 li NET: Internet connection advised
               hr
               h4 How to install...
-              p Please refer to the 
+              p Please refer to the
                 a(href="https://github.com/AOSC-Dev/aosc-os/blob/master/how-to-install.md") installation guide.
               hr
               h4 Core version...
@@ -229,7 +238,7 @@ block content
                 | The "Core version" listed to the left are meant to tell from between
                 | versions of AOSC OS rather than just using date tags.
               p
-                | For a complete rationale of "Core version", please refer to the 
+                | For a complete rationale of "Core version", please refer to the
                 a(href="https://github.com/AOSC-Dev/aosc-os-core/blob/master/README.md") Core
                 |  repository.
     .row

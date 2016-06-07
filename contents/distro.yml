@@ -1,3 +1,12 @@
+mipsel:
+  -
+    desktop: Base (No Kernel)
+    dpkgcore: 3.6.1
+    dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/os-mipsel/base/aosc-os_base_mipsel_20160607.tar.xz
+mipselbuildkit:
+  -
+    datetag: 20160607
+    url: http://mirrors.anthonos.org/anthon/aosc-os/os-mipsel/buildkit/aosc-os-buildkit_mipsel_20160607.tar.xz
 armv7:
   -
     device: Generic
