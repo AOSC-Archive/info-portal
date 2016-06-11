@@ -10,12 +10,12 @@ mipselbuildkit:
 armv7:
   -
     device: Generic
-    dpkgcore: 3.6.0
-    dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/os-armel/generic/aosc-os_base_20160510_dpkg.tar.xz
+    dpkgcore: 3.6.1
+    dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/os-armel/generic/aosc-os_base_armel_20160610.tar.xz
   -
     device: Raspberry Pi 2
-    dpkgcore: 3.6.0
-    dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/os-armel/rpi2/aosc-os_base_rpi2_20160202.1_dpkg.tar.xz
+    dpkgcore: 3.6.1
+    dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/os-armel/rpi2/aosc-os_base_rpi2_20160610.tar.xz
 armv8:
   -
     device: Emulators
