@@ -9,13 +9,13 @@ mipselbuildkit:
     url: http://mirrors.anthonos.org/anthon/aosc-os/os-mipsel/buildkit/aosc-os-buildkit_mipsel_20160607.tar.xz
 armv7:
   -
-    device: Generic
+    device: Base (No Kernel)
     dpkgcore: 3.6.1
-    dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/os-armel/generic/aosc-os_base_armel_20160610.tar.xz
+    dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/os-armel/generic/aosc-os_base_armel_20160628.tar.xz
   -
-    device: Raspberry Pi 2
+    device: Raspberry Pi 2/3
     dpkgcore: 3.6.1
-    dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/os-armel/rpi2/aosc-os_base_rpi2_20160610.tar.xz
+    dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/os-armel/rpi/aosc-os_base_rpi_20160628.1.tar.xz
 armv8:
   -
     device: Emulators
@@ -24,6 +24,9 @@ armv8:
 armbuildkit:
   -
     datetag: 20160202 (ARMv7)
+    url: http://mirrors.anthonos.org/anthon/aosc-os/os-armel/buildkit/aosc-os-buildkit_armel_20160202.tar.xz
+  -
+    datetag: 20160628 (ARMv7)
     url: http://mirrors.anthonos.org/anthon/aosc-os/os-armel/buildkit/aosc-os-buildkit_armel_20160202.tar.xz
 spins:
   -
