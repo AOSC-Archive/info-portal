@@ -62,6 +62,9 @@ spins:
     rpmurl: http://mirrors.anthonos.org/anthon/os3-releases/01_Beta-2/01_Tarballs/aosc-os3_mate-beta2_obsidian_rpm_20150607_en-US.tar.xz
 buildkit:
   -
+    datetag: 20160630
+    url: http://mirrors.anthonos.org/anthon/aosc-os/buildkit/aosc-os-buildkit_20160630.tar.xz
+  -
     datetag: 20160503
     url: http://mirrors.anthonos.org/anthon/aosc-os/buildkit/aosc-os-buildkit_20160503.tar.xz
   -
