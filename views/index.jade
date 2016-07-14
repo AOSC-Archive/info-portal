@@ -83,21 +83,13 @@ block content
                 | the achitecture to use for most of the modern PCs and servers.
                 | This branch is stable and suitable for personal use.
               hr
-              #dpkg: h4 Tarball releases (DPKG)
+              #dpkg: h4 Tarball releases
               ul.list-group
                 each desu in params.distro.spins
                   a(href="#{desu.dpkgurl}").list-group-item
                     strong.list-group-item-indentificator
                       | #{desu.desktop}
                     span.afe-littlecaption() Core #{desu.dpkgcore}
-                    span(style="vertical-align: middle;").pull-right.fa.fa-download
-              #rpm: h4 Tarball releases (RPM)
-              ul.list-group
-                each desu in params.distro.spins
-                  a(href="#{desu.rpmurl}").list-group-item
-                    strong.list-group-item-indentificator
-                      | #{desu.desktop}
-                    span.afe-littlecaption() Core #{desu.rpmcore}
                     span(style="vertical-align: middle;").pull-right.fa.fa-download
               #docker: h4 Docker images
               ul.list-group
@@ -116,11 +108,6 @@ block content
                     span
                       | <strong>#{bk.datetag}</strong>
                     span(style="vertical-align: middle;").pull-right.fa.fa-download
-            .col-md-5.col-xs-12(style="padding-top: 20px")
-              .alert.alert-warning.alert-dismissible
-                <strong>RPM builds are experimental!</strong>
-                //- button(type="button" data-dismiss="alert" aria-label="Close").close
-                //-   span(aria-hidden="true") &times
               h4 Will it run on mine...
               p Please refer to the system requirement listed below.
               ul.afe-literal-list
