@@ -37,9 +37,9 @@ spins:
     rpmurl: http://mirrors.anthonos.org/anthon/aosc-os/base/aosc-os_base_20151230_rpm.tar.xz
   -
     desktop: KDE
-    dpkgcore: 3.6.0
+    dpkgcore: 3.6.2
     rpmcore: 3.2.1
-    dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/kde/aosc-os_kde_20160505_dpkg.tar.xz
+    dpkgurl: http://mirrors.anthonos.org/anthon/aosc-os/os-amd64/kde/aosc-os_kde_20160713_dpkg.tar.xz
     rpmurl: http://mirrors.anthonos.org/anthon/aosc-os/kde/aosc-os_kde_20151228_rpm_amd64.tar.xz
   -
     desktop: GNOME
